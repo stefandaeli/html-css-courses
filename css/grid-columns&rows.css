@@ -1,0 +1,25 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container{
+    width: 600px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 25% 200px;
+    grid-template-rows: 100px 100px auto;
+}
+
+.item{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even){
+    background-color: blueviolet;
+}
