@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My gallery</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 100%;
+        display: block;
+    }
+    .gallery{
+        width: 80%;
+        margin: 20px auto;
+        border: 10px solid white;
+        list-style: none;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0. 0.3);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    body{
+        background-color: #ddd;
+        text-align: center;
+        margin: 50px;
+    }
+</style>
+<body>
+    <h2>My Gallery</h2>
+    <!-- 
+        Cara memanggil gambar dari /images dengan cepat
+        ul.gallery>li*10>img[src="/images/$.jpg"] -->
+        <ul class="gallery">
+            <li><img src="/images/1.jpeg" alt=""></li>
+            <li><img src="/images/2.jpeg" alt=""></li>
+            <li><img src="/images/3.jpeg" alt=""></li>
+            <li><img src="/images/4.jpeg" alt=""></li>
+            <li><img src="/images/5.jpeg" alt=""></li>
+            <li><img src="/images/6.jpeg" alt=""></li>
+            <li><img src="/images/7.jpeg" alt=""></li>
+            <li><img src="/images/8.jpeg" alt=""></li>
+            <li><img src="/images/9.jpeg" alt=""></li>
+            <li><img src="/images/10.jpeg" alt=""></li>
+        </ul>
+</body>
+</html>
